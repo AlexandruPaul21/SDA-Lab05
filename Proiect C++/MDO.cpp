@@ -223,3 +223,16 @@ void MDO::redim() {
     elems=temp;
 }
 
+TCheie MDO::cheieMaxima() const {
+    if(root==-1){
+        return NULL_TCHEIE;
+    }
+    int node=root;
+    int ans;
+    while(node!=-1){
+        ans=node;
+        node=elems[node].right;
+    }
+    return elems[ans].elem.first;
+}
+

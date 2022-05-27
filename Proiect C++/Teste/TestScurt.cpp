@@ -35,9 +35,14 @@ void testAll(){
     	TElem e = it.element();
     	it.urmator();
     }
+    assert(dictOrd.cheieMaxima()==1);
     assert(dictOrd.sterge(1, 2) == true);
     assert(dictOrd.sterge(1, 3) == true);
     assert(dictOrd.sterge(2, 1) == false);
+    dictOrd.adauga(3,1);
+    assert(dictOrd.cheieMaxima()==3);
+    assert(dictOrd.sterge(3,1) == true);
     assert(dictOrd.vid());
+    assert(dictOrd.cheieMaxima()==NULL_TCHEIE);
 }
 

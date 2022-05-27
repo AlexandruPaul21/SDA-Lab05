@@ -19,17 +19,27 @@ private:
 public:
 
 		//reseteaza pozitia iteratorului la inceputul containerului
+        //Teta(1) - CF
+        //Teta(h) - CD
+        //Teta(h) - CM
+        //O(h) - CT
 		void prim();
 
 		//muta iteratorul in container
 		// arunca exceptie daca iteratorul nu e valid
+        //Teta(1) - CF
+        //Teta(h) - CD
+        //Teta(h) - CM
+        //O(h) - CT
 		void urmator();
 
 		//verifica daca iteratorul e valid (indica un element al containerului)
+        //Teta(1) CF=CD=CM=CT
 		bool valid() const;
 
 		//returneaza valoarea elementului din container referit de iterator
 		//arunca exceptie daca iteratorul nu e valid
+        //Teta(1) CF=CD=CM=CT
 		TElem element() const;
 };
 
